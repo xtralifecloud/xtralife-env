@@ -14,9 +14,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.clanofthecloud.com:chris/xtralife-env.git"
+    "url": "https://github.com/xtralifecloud/xtralife-env.git"
   },
-  "author": "devteam <devteam@xtralife.cloud>",
+  "author": "chris <chris@xtralife.cloud>",
   "license": "(C) Xtralife.cloud, 2015",
   "engines" : { "node" : ">=6.2.2" },
   "dependencies": {
