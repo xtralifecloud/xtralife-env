@@ -1,0 +1,38 @@
+{
+  "name": "xtralife-env",
+  "version": "2.12.4",
+  "description": "Dependency injection for node.js",
+  "main": "src/index.coffee",
+  "scripts": {
+    "test": "mocha test/*.coffee"
+  },
+  "keywords": [
+    "configuration",
+    "environment",
+    "DI",
+    "IOC"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.clanofthecloud.com:chris/xtralife-env.git"
+  },
+  "author": "devteam <devteam@xtralife.cloud>",
+  "license": "(C) Xtralife.cloud, 2015",
+  "engines" : { "node" : ">=6.2.2" },
+  "dependencies": {
+    "async": "*",
+    "bluebird": "*",
+    "extend": "*",
+    "minimist": "*",
+    "node-logentries": "*",
+    "winston": "*",
+    "winston-elasticsearch": "*",
+    "winston-slack": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "coffee-script": "*",
+    "coffee-script-mapped": "*"
+  }
+}
