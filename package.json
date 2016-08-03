@@ -1,6 +1,6 @@
 {
   "name": "xtralife-env",
-  "version": "2.12.4",
+  "version": "3.0.0",
   "description": "Dependency injection for node.js",
   "main": "src/index.coffee",
   "scripts": {
@@ -18,7 +18,9 @@
   },
   "author": "chris <chris@xtralife.cloud>",
   "license": "(C) Xtralife.cloud, 2015",
-  "engines" : { "node" : ">=6.2.2" },
+  "engines": {
+    "node": ">=6.2.2"
+  },
   "dependencies": {
     "async": "*",
     "bluebird": "*",
