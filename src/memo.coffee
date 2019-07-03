@@ -5,7 +5,7 @@ class Memoized
 	getValue: (cb)->
 		if @value? then cb(null, @value)
 		else
-			@fn (err, result)->
+			@fn (err, result)=>
 				@value = result
 				cb(err, @value)
 

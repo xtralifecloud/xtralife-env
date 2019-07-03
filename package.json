@@ -26,15 +26,12 @@
     "bluebird": "*",
     "extend": "*",
     "minimist": "*",
-    "node-logentries": "*",
-    "winston": "*",
-    "winston-elasticsearch": "*",
-    "winston-slack": "*"
+    "winston": "*"
   },
   "devDependencies": {
     "mocha": "*",
     "should": "*",
-    "coffee-script": "*",
+    "coffeescript": "*",
     "coffee-script-mapped": "*"
   }
 }

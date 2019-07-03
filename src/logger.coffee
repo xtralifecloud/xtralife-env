@@ -1,8 +1,4 @@
-logentries = require 'node-logentries'
-
 winston = require 'winston'
-Elasticsearch = require 'winston-elasticsearch'
-{Slack} = require('winston-slack')
 
 fs = require 'fs'
 extend = require 'extend'
@@ -17,7 +13,6 @@ createLogger = (conf)->
 
 	transports = []
 	winston.addColors logs.colors
-	winston.setLevels logs.levels
 
 	if logs.logconsole.enable
 		transports.push(new (winston.transports.Console)({
@@ -44,40 +39,8 @@ createLogger = (conf)->
 			levels: logs.levels
 		}))
 
-	if logs.logentries.enable
-		if logs.logentries.token?
-			log = logentries.logger({
-				token: logs.logentries.token
-				levels: logs.levels
-			})
-			log.winston(winston, {
-				level: logs.logentries.level
-				levels: logs.levels
-			})
-			transports.push(new (winston.transports.LogentriesLogger)({
-				level: logs.logentries.level
-				levels: logs.levels
-			}))
-
-		else
-			console.log "logentries.token is not defined!"
-
-	if logs.elastic?.enable
-		transports.push new Elasticsearch(logs.elastic.config)
-
-	if logs.slack?.enable
-		transports.push(new Slack({
-			level: logs.slack.level
-			levels: logs.levels
-			domain: logs.slack.domain
-			apiToken: logs.slack.apiToken
-			channel: logs.slack.channel
-			username: logs.slack.username
-			handleExceptions : true
-		}))
-
-
-	logger = new winston.Logger ({
+	logger = winston.createLogger ({
+		format: winston.format.simple()
 		level: logs.level
 		levels: logs.levels
 		transports: transports
