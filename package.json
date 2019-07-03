@@ -1,6 +1,6 @@
 {
   "name": "xtralife-env",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Dependency injection for node.js",
   "main": "src/index.coffee",
   "scripts": {
