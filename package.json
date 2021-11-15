@@ -22,18 +22,17 @@
     "node": ">=12"
   },
   "dependencies": {
-    "async": "*",
-    "extend": "*",
-    "minimist": "^1.2.5"
+    "async": "^3.2.1",
+    "extend": "^3.0.2"
   },
   "peerDependencies": {
     "bluebird": "*",
     "winston": "*"
   },
   "devDependencies": {
-    "bluebird": "*",
-    "mocha": "^8.0.1",
+    "bluebird": "^3.7.2",
+    "mocha": "^9.1.1",
     "should": "^13.2.3",
-    "winston": "*"
+    "winston": "^3.3.3"
   }
 }
