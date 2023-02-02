@@ -19,7 +19,7 @@
   "author": "chris <chris@xtralife.cloud>",
   "license": "(C) Xtralife.cloud, 2015",
   "engines": {
-    "node": ">=12"
+    "node": "^18.13.0"
   },
   "dependencies": {
     "async": "^3.2.1",
