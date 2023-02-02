@@ -4,7 +4,7 @@
   "description": "Dependency injection for node.js",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha test/*.js --exit"
   },
   "keywords": [
     "configuration",
