@@ -1,6 +1,6 @@
 {
   "name": "xtralife-env",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Dependency injection for node.js",
   "main": "src/index.js",
   "scripts": {
